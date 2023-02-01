@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face{font-family: "poppins";src: url(/fonts/Poppins-Regular.ttf);}
+
+/* common css start */
+html,body{font-family: "poppins";}
+.container{max-width: 1300px;margin: 0 auto;box-sizing: border-box;padding-left: 15px;padding-right: 15px;}
+
+.w-50{width:50%}
+.w-70{width:70%}
+
+.d-flex{display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+
+.justify-content-center{justify-content: center;}
+.align-items-center{align-items: center;}
+
+.font-bold{font-weight: bold;}
+
+
+.try-for-free-btn{padding: 15px 40px;background-color: #2500f9;border: 1px solid #2500f9;color: #fff;border-radius: 50px;cursor: pointer;font-weight: bold;}
+/* common css end */
+
+
+/* navbar css start */
+.navbar{padding-top:70px;background-color:#fdfdfe;}
+.navbar .navbar-main{justify-content: space-between;}
+.navbar .navbar-link-list .navbar-link{color: #242f51;text-decoration: none;font-size: 16px;padding: 0 30px;}
+/* navbar css end */
+
+
+/* banner-section css start */
+.banner-section{background-image: url(/images/home-banner.webp);width: 100%;height: 100%;background-size: contain}
+.banner-section .phone-img-div{min-height: 800px;justify-content: end;}
+.banner-section .phone-img-div .banner-phone{height: 100%;width: 450px;}
+/* .banner-section .content-main{} */
+.banner-section .content-main .content-title{background-color: #e2eaed;padding: 10px 35px;border-radius: 30px;font-size: 18px;color: #242f51;display: inline-block;margin-bottom: 25px;}
+.banner-section .content-main .best-app-title{color: #242f51;font-size: 60px;font-weight: bold;margin-bottom: 25px;line-height: 75px;}
+.banner-section .content-main .content-sub-title{color: #616368;margin-bottom: 40px;}
+.banner-section .content-main .watch-demo-link{color: #2500f9;text-decoration: none;font-size: 16px;margin-left: 20px;}
+/* banner-section css end */
+
+
+/* feature-section css start */
+.feature-section{margin:60px 0;position: relative;}
+.feature-section .features-div .feature-content.w-50{width: 45%;}
+.feature-section .features-div .feture-flex{gap:50px}
+.feature-section .feature-title{color: #242f51;font-size: 35px;line-height: 40px;margin-bottom: 15px;}
+.feature-section .feature-sub-title{color:  #616368;font-size: 14px;line-height: 20px;margin-bottom: 40px;}
+.feature-section .feature-content .service-img{height: 75px;width: 75px;}
+.feature-section .feature-content .service-title{color: #242f51;font-weight: bold;margin: 15px 0;}
+.feature-section .feature-content .service-content{color: #616368;font-size:14px}
+.feature-section .features-div .try-for-free-btn{margin-top: 50px;}
+
+.feature-section .feature-img-bg{position: absolute;top: 0;right: 0;width: 600px;}
+.feature-section .feature-img-bg .feature-mobile-img{width: 100%;height: 100%;object-fit: cover;}
+
+@media(max-width:1600px){
+.feature-section .features-div .feature-content.w-50{width:38%}
+}
+/* feature-section css end */
+
+
+/* app-download-section css start */
+.app-download-section{margin-top: 0;position: relative;}
+.app-download-section .download-content .download-title{color: #242f51; font-size: 40px;}
+.app-download-section .download-content .download-desc{color: #616368;font-size: 14px;margin-top: 20px;}
+
+.app-download-section .download-content .download-link{margin-top: 20px;gap: 20px;}
+.app-download-section .img-main-div{height: 315px;}
+.app-download-section .img-main-div .img-main{width: 100%;}
+hr{border-color: #fff;}
+
+/* app-download-section css end */
+
+/* footer css start */
+.footer{padding: 70px 0;background-color:#09142e;text-align: center;}
+.footer .footer-logo{margin: 0 auto;}
+.footer .footer-link-list{margin: 40px 0;}
+.footer .footer-link-list .footer-link{color: #fff; margin: 0 20px;text-decoration: none;}
+.footer .footer-social-icon .footer-social-link{opacity: 0.3;color: #fff;margin: 0 10px;}
+.footer .copyright-line{opacity: 0.3;color:#fff;font-size: 14px;margin-top: 50px;margin-bottom:40px;}
+/* footer css end */
+
+
+
+/* responsive css start*/
+@media(max-width:1400px){
+	.navbar{display: none;}
+}
+
+@media(max-width:1399px){
+	/* banner-section css start */
+	.banner-section .d-flex:first-child{flex-direction: row;}
+	.banner-section .content-main .content-title{font-size: 20px;}
+	.banner-section .phone-img-div .banner-phone{width: 60%;}
+	.banner-section .content-main .content-sub-title{margin-bottom: 25px;}
+	.banner-section .phone-img-div{justify-content: center;min-height: 550px;}
+	.banner-section .content-main .best-app-title{margin-bottom: 10px;font-size: 56px;}
+	/* banner-section css end */
+
+	/* feature-section css start */
+	.feature-section{margin:30px 0;}
+	.feature-section .w-50{width: 100%;}
+	.feature-section .feature-img-bg {top: 50%;width: 450px;transform: translateY(-50%);}
+	/* feature-section css end */
+
+	/* app-download-section css start */
+	.app-download-section .w-50{width: 100%;}
+	/* app-download-section css end */
+}
+
+@media(max-width:991px){
+	.banner-section .phone-img-div .banner-phone{display: block;width: 65%;}
+	.banner-section .content-main .content-title{font-size: 18px;}
+	.banner-section .content-main .best-app-title{font-size: 40px;line-height: 50px;}
+
+	/* feature-section css start */
+	.feature-section .w-70 {width: 100%;}
+	.feature-section .feature-img-bg{display: none;}
+	.feature-section .features-div .feture-flex{justify-content: space-around;}
+	/* feature-section css end */
+
+	/* app-download-section css start */
+	.app-download-section .img-main-div.w-50{display: flex;justify-content: center;align-items: center;}
+	/* app-download-section css end */
+}
+
+@media(max-width:767px){
+
+	/* banner-section css start */
+	.banner-section {background-size: contain;padding: 30px 0 ;}
+	.banner-section .d-flex:first-child{flex-direction: column;}
+	.banner-section .w-50{width: 100%;}
+	.banner-section .content-main .content-title{font-size: 14px;}
+	.banner-section .content-main .best-app-title{font-size: 34px;line-height: 38px;margin-bottom: 13px;}
+	.banner-section .content-main .content-sub-title{margin-bottom: 25px;}
+	.banner-section .phone-img-div .banner-phone{display: none;}
+	.banner-section .phone-img-div{min-height: 0;}
+	.try-for-free-btn{padding: 10px 20px;}
+	/* banner-section css end */
+
+	/* feature-section css start */
+	.feature-section .feature-title{font-size: 32px;}
+	.feature-section .features-div .feature-content.w-50{width: 45%;text-align: center;}
+	.feature-section .text-center{text-align: center;}
+	/* feature-section css end */
+
+	/* app-download-section css start */
+	.app-download-section{padding: 20px 0}
+	.app-download-section .download-content .download-title{font-size: 30px;}
+	.app-download-section .download-content .download-link img{width: 35%;}
+	.app-download-section .img-main-div.w-50{display: none;}
+	/* app-download-section css end */
+}
+
+@media(max-width:575px){
+	/* feature-section css start */
+	.feature-section .features-div .feature-content.w-50{width: 100%;}
+	/* feature-section css end */
+
+	/* footer css start */
+	.footer .footer-link-list .footer-link{margin-bottom: 20px;display: block;}
+	/* footer css end */
+}
+
+@media(max-width:420px){
+	.banner-section {background-size: cover;}
+}
+
+/* responsive css end*/
